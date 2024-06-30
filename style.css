@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 
 body{
@@ -33,11 +33,11 @@ div.hero-head > .spacer{ /*spacer that shrinks as the window shrinks horizontall
 }
 
 div.hero-head > div.header-links{
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 div.hero-head > div.header-logo{
-    margin-left: 100px;
+    margin-left: 150px;
     font-size: 24px;
 }
 
@@ -51,16 +51,56 @@ div.hero-head > div > a{
 /*below is for the rest of the hero*/
 div.hero-main{
     height: 400px;
-    justify-content: center;
-    gap: 100px;
+}
+
+div.hero-main > div{
+    flex: 0 0 auto;
+    height: 250px;
+    width: 500px;
 }
 
 div.hero-main > div.text{
-    height: 200px;
-    width: 200px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+div.hero-main > div.text > h1{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.hero-main > div.text > p{
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+div.hero-main > div.text > button{
+    font-size: 18px;
+    color: #F9FAF8;
+    font-weight: bold;
+    background-color: #3382F6;
+    height: 45px;
+    width: 150px;
+    border-radius: 12px;
+}
+
+div.hero-main > .spacer{
+    height: 10px;
+    width: 600px;
+    flex: 0 1 auto /*grow 0, shrink 1, auto basis*/
 }
 
 div.hero-main > div.image{
-    height: 200px;
-    width: 200px;
+    margin-right: 150px;
+}
+
+div.image > img{
+    height: 250px;
+    width: 500px;
 }
