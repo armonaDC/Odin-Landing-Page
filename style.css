@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    /* outline: 2px solid red; */
+}
+
+body{
+    font-family: 'Roboto', Arial;
+    margin: 0;
+    padding: 0;
+}
+
+/*below is for the topmost section of the page*/
+div.hero-head{
+    display: flex;
+    align-items: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    height: 80px;
+}
+
+div.hero-head > div{
+    display: flex;
+    white-space: nowrap;
+}
+
+div.hero-head > .spacer{ /*spacer that shrinks as the window shrinks horizontally*/
+    height: 10px;
+    width: 900px;
+    flex: 0 1 auto /*grow 0, shrink 1, auto basis*/
+}
+
+div.hero-head > div.header-links{
+    margin-right: 100px;
+}
+
+div.hero-head > div.header-logo{
+    margin-left: 100px;
+    font-size: 24px;
+}
+
+div.hero-head > div > a{
+    margin: 10px;
+    color: #E5E7EB;
+    text-decoration: none;
+    font-size: 18px;
+}
