@@ -52,63 +52,56 @@ div.hero-head > div{
 
 /*below is for the rest of the hero*/
 div.hero-main{
-    height: 400px;
+    padding: calc(0.5rem + 0.7vw);
 }
 
 div.hero-main > div{
-    flex: 0 0 auto;
-    height: 250px;
-    max-width: 500px;
+    max-width: 28vw;
 }
 
 div.hero-main > div.text{
-    margin-left: 150px;
     display: flex;
     flex-direction: column;
+    padding: 0.5vw;
+    /* padding-right: 10vw; */
 }
 
-div.hero-main > div.text > h1{
-    font-size: 48px;
+div.text > h1{
+    font-size: calc(1.5 * (0.7rem + 1.5vw));
     color: #F9FAF8;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-div.hero-main > div.text > p{
-    font-size: 18px;
+div.text > p{
+    font-size: calc(0.5rem + 0.8vw);
     color: #E5E7EB;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px 0;
 }
 
-div.hero-main > div.text > button{
-    font-size: 18px;
+div.text > button{
+    font-size: calc(0.5rem + 0.8vw);
     color: #F9FAF8;
     font-weight: bold;
     background-color: #3382F6;
-    height: 45px;
-    width: 150px;
+    height: calc(1.5rem + 1.25vw);
+    width: calc(3rem + 5vw);
     border-radius: 12px;
 }
 
-div.hero-main > .spacer{
-    height: 10px;
-    width: 600px;
-    flex: 0 1 auto /*grow 0, shrink 1, auto basis*/
-}
-
 div.hero-main > div.image{
-    margin-right: 150px;
+    display: flex;
+    padding: 0.5vw;
+    /* padding-left: 10vw; */
+    max-height: 20vw;
+    max-width: 35vw;
 }
 
 div.image > img{
-    max-height: 250px;
-    max-width: 500px;
-}
+    max-height: 100%;
+    max-width: 100%; 
+    object-fit: contain;
 
-/* below is a media query for font size adjustment */
-/* @media (max-width: 1300px) {
-    .logo, .main{font-size: 36px;}
-    .text, div.hero-head > div > a{font-size: 14px;}
-} */
+}
+/*FIXME: add media query for image size at max-width*/
+/* FIXME: fix padding so that the main text is aligned with header text */
