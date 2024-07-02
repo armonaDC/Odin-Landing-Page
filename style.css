@@ -17,31 +17,28 @@ h1, h2{
 div.hero{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: calc(0.5rem + 0.7vw) calc(0.5rem + 9vw);
     background-color: #1F2937;
     color: #E5E7EB;
-}
-
-div.hero-head{
-    padding: calc(0.5rem + 0.7vw);
 }
 
 div.hero-head > div{
     display: flex;
 }
 
-.header-logo{
+/* .header-logo{
     padding-right: 10vw;
-}
+} */
 
 .header-logo > h1{
     font-size: calc(0.7rem + 1.5vw);
     color:#F9FAF8;
 }
 
-.header-links{
+/* .header-links{
     padding-left: 10vw;
-}
+} */
 
 .header-links > a{
     margin: 0 10px;
@@ -51,10 +48,6 @@ div.hero-head > div{
 }
 
 /*below is for the rest of the hero*/
-div.hero-main{
-    padding: calc(0.5rem + 0.7vw);
-}
-
 div.hero-main > div{
     max-width: 28vw;
 }
@@ -104,4 +97,3 @@ div.image > img{
 
 }
 /*FIXME: add media query for image size at max-width*/
-/* FIXME: fix padding so that the main text is aligned with header text */
