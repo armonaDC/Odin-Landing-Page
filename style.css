@@ -9,43 +9,45 @@ body{
     padding: 0;
 }
 
+h1, h2{
+    margin: 0;
+}
+
 /*below is for the top most or header section of the page*/
 div.hero{
     display: flex;
     align-items: center;
+    justify-content: space-around;
     background-color: #1F2937;
     color: #E5E7EB;
 }
 
 div.hero-head{
-    height: 80px;
+    padding: calc(0.5rem + 0.7vw);
 }
 
 div.hero-head > div{
     display: flex;
-    white-space: nowrap;
 }
 
-div.hero-head > .spacer{ /*spacer that shrinks as the window shrinks horizontally*/
-    height: 10px;
-    width: 900px;
-    flex: 0 1 auto /*grow 0, shrink 1, auto basis*/
+.header-logo{
+    padding-right: 10vw;
 }
 
-div.hero-head > div.header-links{
-    margin-right: 150px;
+.header-logo > h1{
+    font-size: calc(0.7rem + 1.5vw);
+    color:#F9FAF8;
 }
 
-div.hero-head > div.header-logo{
-    margin-left: 150px;
-    font-size: 24px;
+.header-links{
+    padding-left: 10vw;
 }
 
-div.hero-head > div > a{
-    margin: 10px;
+.header-links > a{
+    margin: 0 10px;
     color: #E5E7EB;
     text-decoration: none;
-    font-size: 18px;
+    font-size: calc(0.5rem + 0.8vw);
 }
 
 /*below is for the rest of the hero*/
@@ -56,7 +58,7 @@ div.hero-main{
 div.hero-main > div{
     flex: 0 0 auto;
     height: 250px;
-    width: 500px;
+    max-width: 500px;
 }
 
 div.hero-main > div.text{
@@ -101,6 +103,12 @@ div.hero-main > div.image{
 }
 
 div.image > img{
-    height: 250px;
-    width: 500px;
+    max-height: 250px;
+    max-width: 500px;
 }
+
+/* below is a media query for font size adjustment */
+/* @media (max-width: 1300px) {
+    .logo, .main{font-size: 36px;}
+    .text, div.hero-head > div > a{font-size: 14px;}
+} */
