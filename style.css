@@ -18,12 +18,16 @@ div.hero{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: calc(0.5rem + 0.7vw) calc(0.5rem + 9vw);
+    padding: calc(0.5rem + 2.5vw) calc(0.5rem + 9vw);
     background-color: #1F2937;
     color: #E5E7EB;
 }
 
-div.hero-head > div{
+.hero-head.hero{
+    padding: calc(0.5rem + 0.7vw) calc(0.5rem + 9vw);
+}
+
+.hero-head > div{
     display: flex;
 }
 
@@ -40,11 +44,11 @@ div.hero-head > div{
 }
 
 /*below is for the rest of the hero*/
-div.hero-main > div{
+.hero-main > div{
     max-width: 28vw;
 }
 
-div.hero-main > div.text{
+.hero-main > div.text{
     display: flex;
     flex-direction: column;
     /* padding: 0.5vw; */
@@ -73,7 +77,7 @@ div.text > button{
     border-radius: 12px;
 }
 
-div.hero-main > div.image{
+.hero-main > div.image{
     display: flex;
     padding: 0.5vw;
     max-height: 20vw;
