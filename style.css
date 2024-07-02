@@ -27,18 +27,10 @@ div.hero-head > div{
     display: flex;
 }
 
-/* .header-logo{
-    padding-right: 10vw;
-} */
-
 .header-logo > h1{
     font-size: calc(0.7rem + 1.5vw);
     color:#F9FAF8;
 }
-
-/* .header-links{
-    padding-left: 10vw;
-} */
 
 .header-links > a{
     margin: 0 10px;
@@ -55,8 +47,7 @@ div.hero-main > div{
 div.hero-main > div.text{
     display: flex;
     flex-direction: column;
-    padding: 0.5vw;
-    /* padding-right: 10vw; */
+    /* padding: 0.5vw; */
 }
 
 div.text > h1{
@@ -85,7 +76,6 @@ div.text > button{
 div.hero-main > div.image{
     display: flex;
     padding: 0.5vw;
-    /* padding-left: 10vw; */
     max-height: 20vw;
     max-width: 35vw;
 }
@@ -94,6 +84,5 @@ div.image > img{
     max-height: 100%;
     max-width: 100%; 
     object-fit: contain;
-
 }
 /*FIXME: add media query for image size at max-width*/
