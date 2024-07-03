@@ -70,7 +70,7 @@ div.text > p{
 div.text > button{
     font-size: calc(0.5rem + 0.8vw);
     color: #F9FAF8;
-    font-weight: bold;
+    font-weight: 800;
     background-color: #3382F6;
     height: calc(1.5rem + 1.25vw);
     width: calc(3rem + 5vw);
@@ -88,6 +88,42 @@ div.image > img{
     max-height: 100%;
     max-width: 100%; 
     object-fit: contain;
+}
+
+/* below is for the white section beneath the hero */
+.card-info{
+    font-size: calc(1.25 * (0.35rem + 2vw));
+    font-weight: 800;
+    color: #1F2937;
+    text-align: center;
+    padding: calc(0.5rem + 2.5vw) 0;
+}
+
+.card-container{
+    display:flex;
+    font-size: calc(0.5rem + 0.8vw);
+    justify-content: space-around;
+    align-items: center;
+    padding: calc(0.5rem + 2.5vw) calc(1rem + 12vw);
+}
+
+.card{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 calc(0.1rem + 1vw);
+    color: #1F2937;
+    text-align: center;
+}
+
+.block{
+    width: 15vw;
+    height: 15vw;
+    border: 0.4vw;
+    border-style: solid;
+    border-color: #3382F6;
+    border-radius: calc(0.5rem + 0.8vw);
 }
 
 @media(max-width: 850px){
