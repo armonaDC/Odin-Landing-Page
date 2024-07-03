@@ -45,7 +45,7 @@ div.hero{
 
 /*below is for the rest of the hero*/
 .hero-main > div{
-    max-width: 28vw;
+    max-width: 35vw;
 }
 
 .hero-main > div.text{
@@ -80,8 +80,8 @@ div.text > button{
 .hero-main > div.image{
     display: flex;
     padding: 0.5vw;
-    max-height: 20vw;
-    max-width: 35vw;
+    /* max-height: 20vw;
+    max-width: 35vw; */
 }
 
 div.image > img{
@@ -89,4 +89,17 @@ div.image > img{
     max-width: 100%; 
     object-fit: contain;
 }
-/*FIXME: add media query for image size at max-width*/
+
+@media(max-width: 850px){
+    .hero-main{
+        flex-direction: column;
+    }
+    .hero-main > div.image{
+        padding-top: 5vw;
+
+    }
+    .hero-main > div{
+        max-width: none;
+        width: 75vw;
+    }
+}
