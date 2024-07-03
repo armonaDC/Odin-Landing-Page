@@ -57,7 +57,7 @@ div.hero{
 div.text > h1{
     font-size: calc(1.5 * (0.7rem + 1.5vw));
     color: #F9FAF8;
-    font-weight: bold;
+    font-weight: 800;
     margin: 10px 0;
 }
 
@@ -70,7 +70,6 @@ div.text > p{
 div.text > button{
     font-size: calc(0.5rem + 0.8vw);
     color: #F9FAF8;
-    font-weight: 800;
     background-color: #3382F6;
     height: calc(1.5rem + 1.25vw);
     width: calc(3rem + 5vw);
