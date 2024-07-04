@@ -188,6 +188,19 @@ div.image > img{
     height: calc(1rem + 1.25vw);
     width: calc(3rem + 5vw);
 }
+
+/*Below is for the footer*/
+footer{
+    background-color: #1F2937;
+    padding: 0; /*temporary*/
+    text-align: center;
+}
+
+footer > a{
+    color:#E5E7EB;
+    text-decoration: none;
+}
+
 @media(max-width: 850px){ /*main image still looks awkward but too lazy to play around with*/
     .hero-main{
         flex-direction: column;
