@@ -71,6 +71,7 @@ div.text > button{
     font-size: calc(0.5rem + 0.8vw);
     color: #F9FAF8;
     background-color: #3382F6;
+    border-style: solid;
     height: calc(1.5rem + 1.25vw);
     width: calc(3rem + 5vw);
     border-radius: 12px;
@@ -184,7 +185,10 @@ div.image > img{
     border-style: solid;
     border-color:#E5E7EB;
     color:#E5E7EB;
+    font-size: calc(0.5rem + 1vw);
     border-radius: 8px;
+    position: relative;
+    left: calc(1rem + 1vw);
     height: calc(1rem + 1.25vw);
     width: calc(3rem + 5vw);
 }
@@ -192,13 +196,14 @@ div.image > img{
 /*Below is for the footer*/
 footer{
     background-color: #1F2937;
-    padding: 0; /*temporary*/
+    padding: calc(0.7rem + 1vw) 0;
     text-align: center;
 }
 
 footer > a{
     color:#E5E7EB;
     text-decoration: none;
+    font-size: calc(0.5rem + 0.8vw);
 }
 
 @media(max-width: 850px){ /*main image still looks awkward but too lazy to play around with*/
