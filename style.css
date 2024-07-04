@@ -125,7 +125,32 @@ div.image > img{
     border-radius: calc(0.5rem + 0.8vw);
 }
 
-@media(max-width: 850px){
+/*Below is for the quote section beneath white section*/
+.quote{
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    color:#1F2937;
+    font-size: calc(1.25 * (0.35rem + 2vw));
+    font-style: italic;
+    justify-content: center;
+    align-items: end;
+    padding: calc(0.5rem + 2.5vw) calc(1rem + 12vw);
+}
+
+.quote > p{
+    margin: 0;
+}
+
+.author{
+    font-size: calc(0.3rem + 2vw);
+    font-style: normal;
+    font-weight: bold;
+    position: relative;
+    bottom: 1vw;
+    right: 2vw;
+}
+@media(max-width: 850px){ /*main image still looks awkward but too lazy to play around with*/
     .hero-main{
         flex-direction: column;
     }
