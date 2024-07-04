@@ -74,6 +74,7 @@ div.text > button{
     height: calc(1.5rem + 1.25vw);
     width: calc(3rem + 5vw);
     border-radius: 12px;
+    border-color: #1F2937;
 }
 
 .hero-main > div.image{
@@ -149,6 +150,43 @@ div.image > img{
     position: relative;
     bottom: 1vw;
     right: 2vw;
+}
+
+/*Below is for the call to action section*/
+.CTA-section{
+    padding: calc(0.5rem + 2vw) calc(1rem + 10vw);
+}
+
+.CTA-section > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3382F6;
+    border-radius: calc(0.5rem + 0.8vw);
+    padding: calc(0.4rem + 2vw) calc(1.2rem + 6vw);
+}
+
+.CTA-text > p{
+    font-size: calc(0.5rem + 0.8vw);
+    text-wrap: pretty;
+    color:#E5E7EB;
+    margin: 0;
+}
+
+.CTA-text > p.declaration{
+    font-size: calc(0.3rem + 2vw);
+    font-weight: bold;
+    margin:0.5vw 0;
+}
+
+.CTA > button{
+    background-color: #3382F6;
+    border-style: solid;
+    border-color:#E5E7EB;
+    color:#E5E7EB;
+    border-radius: 8px;
+    height: calc(1rem + 1.25vw);
+    width: calc(3rem + 5vw);
 }
 @media(max-width: 850px){ /*main image still looks awkward but too lazy to play around with*/
     .hero-main{
